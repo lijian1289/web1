@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: white;
+        }
+        p{
+            color:green;
+             /* width: 3opx;
+             height: 30px; */
+             font-size:20px;
+        }
+        .a{
+            color:red;
+            font-size:30px;   
+        }
+       
+        #name{
+            font-size: 20px;
+            color:cyan;
+        }
+       .box1,.box2,.box3{
+            width: 50px;
+            height: 50px;
+            
+            /* 行内不能设置宽和高,行内块可以; */
+        }
+        .box1{
+            font-size: 50px;
+            background-color:blue;
+            display: inline;
+            
+        }
+        .box2{
+            background-color:darkred;
+            display:inline-block;
+        }
+        .box3{
+            background-color:dimgrey;
+            
+        }
+        /* span.a,p,{
+            /* color:yellow;   行内块元素img  input
+        ] */
+        
+    </style>
+</head>
+<body>
+    
+    <p>标签选择器</p>
+    <div class="a">类选择器</div>
+    <div id="name">id选择器</div>
+   
+    <!-- <div>box</div> -->
+    <p>通配符选择器</p>
+    <p >复合选择器</p>
+
+    <div class="box1">江西</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>
