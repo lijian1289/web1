@@ -50,7 +50,7 @@
 function Person(name,sex){
     this.name = name,
     this.sex = sex//最后一个没有逗号
-
+    
     this.sayName = function(){
         console.log(this.name)
     }
@@ -59,8 +59,9 @@ Person.prototype.sayName2 = function(){
     console.log("this is name2");
 }
 
-var p1 = new Person ("张四","女")
+var p1 = new Person ("张四","女")  //p1是对象 是新的person
 console.log(p1);
 
-console.log(p1.__sayName__);
-//点了一下
+console.log(p1.__proto__);  // 调sayNaem sayName2 
+//点了一下    .__proto__ 的顶级对象是 Object. 
+   //用Object时 自动指向.__proto__ = Object.protype.__proto__ = null
